@@ -3,7 +3,8 @@ name: Deploy MkDocs to GitHub Pages
 on:
   push:
     branches:
-      - master   # Trigger workflow only on pushes to the main branch
+      - master   # Trigger workflow only on pushes to the main branch 
+      # Jagoum Change ADORSYS-GIS to Jagoum
 
 permissions: 
   contents: write
