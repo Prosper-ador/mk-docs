@@ -11,7 +11,8 @@ theme:
 nav:
   - Home: index.md
   - About: about.md
-  - Sample: sample.md
+  - Sample: Sample.md
+  - About Mulipass: multipass.md
 
 # Extra settings
 markdown_extensions:
