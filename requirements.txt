@@ -1,2 +1,2 @@
 mkdocs
-mkdocs-materails
+mkdocs-material
