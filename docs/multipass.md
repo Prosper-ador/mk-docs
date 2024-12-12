@@ -5,14 +5,56 @@
 &nbsp; **Lets get started** 
 
 To begins you need to install Multipass
--  use the command `sudo apt-get install multipass` to install multipass.
-- use `multipass launch <name of instance>` to launch an instance of the machine 
-- use `multipass shell <instance> ` to open the shell of your instance on oyur virtual machine.
-- use `multipass list` to see the current running  machines or the state of oyur instances you created.
-- If you whish to start an instance use `multipass start` followded by the name of the instance
-  > For example `multipass start foo`
-- To stop the instance use `multipass stop` followed by the name of the instance
-  > For example `multipass stop foo`
+-  use the command 
+```bash 
+sudo apt-get install multipass
+```
+to install multipass.
+
+- use
+
+```bash
+ multipass launch <name of instance>
+```
+ 
+to launch an instance of the machine 
+
+- use
+ 
+```bash
+ multipass shell <instance> 
+```
+ to open the shell of your instance on oyur virtual machine.
+
+- use 
+```bash
+multipass list
+```
+to see the current running  machines or the state of oyur instances you created.
+
+- If you whish to start an instance use 
+```bash 
+multipass start
+```
+followded by the name of the instance
+
+  > For example 
+```bash
+ multipass start foo
+```
+
+- To stop the instance use 
+
+```bash
+ multipass stop
+```
+followed by the name of the instance
+  > For example
+ 
+```bash
+multipass stop foo
+```
+
 - Now if i needed to tell you all the other commands that you can use in multipass it will not be able to enter into this page.
 - To see the different commands you could use on multipass use the command `multipass help `
 
@@ -32,13 +74,29 @@ For more resources on how to use multipass you can visit the following site
 
 [How to use multipass]
 (https://multipass.run/)
-- The command `multipass exec docker-vm --docker ps` is used to  run a container from your virtual machine on your real machine.
-  > Notice that the syntax to run any command on multipass virtual machine is `multipass exec <name of vm> --command `  
-- `docker run  hello-world` is used to run the container hello-world either on you virtual machine or on your real machine depending o where you run the command.
+- The command 
+```bash
+multipass exec docker-vm -- docker ps
+```
+ is used to  run a container from your virtual machine on your real machine.
+  > Notice that the syntax to run any command on multipass virtual machine is
+```bash 
+multipass exec <name of vm> -- command 
+```  
+-
+ 
+```bash
+docker run  hello-world
+```
+ is used to run the container hello-world either on you virtual machine or on your real machine depending o where you run the command.
 - Oh don't forget `docker ps ` is used to see the processing state of your container. 
-- To see the different images on your container use `docker images`
+- To see the different images on your container use 
+```bash 
+docker images
+```
 
-  > [For more information about docker visit the following site]
-  > (https://www.docker.com/resources/what-container/)
+ [For more information about docker visit the following site][1]
+ [1]  https://www.docker.com/resources/what-container/
 - This documentary was made using markdown.
-![The markdown logo] (markdown-mark.png)
+
+
