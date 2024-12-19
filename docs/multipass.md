@@ -95,8 +95,7 @@ docker run  hello-world
 docker images
 ```
 
- [For more information about docker visit the following site][1]
- [1]  https://www.docker.com/resources/what-container/
+ [For more information about docker visit the following site](https://www.docker.com/resources/what-container/)
 - This documentary was made using markdown.
 
 
