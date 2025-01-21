@@ -1,13 +1,24 @@
-FROM python:3.9-slim
+# use the official pthon image as a base image
+FROM nginx AS builder
+
+
+#the working directory is /app
 
 WORKDIR /app
+#Upgrade the system
+RUN apt update
 
-COPY requirements.txt .
+#Installing depencies
+RUN apt install  mkdocs -y && apt install mkdocs-bootstrap -y
 
-RUN pip install --no-cache-dir -r  requirements.txt
-
+#copy te orihect files into the container
 COPY . .
 
-EXPOSE 8000
+# build the project
+RUN mkdocs build
 
-CMD ["mkdocs", "serve", "--dev-addr=0.0.0.0:8000"]
+FROM nginx:alpine
+
+#copy project build code to nginx server
+COPY --from=builder /app/site /usr/share/nginx/html
+

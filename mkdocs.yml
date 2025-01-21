@@ -5,14 +5,14 @@ site_url: 'https://Jagoum.github.io/mk-docs'  # Change this to your site's URL
 
 # Theme settings
 theme:
-  name: material
+  name: mkdocs
 
 # Navbar settings (site structure)
 nav:
   - Home: index.md
   - About: about.md
   - Sample: Sample.md
-  - About Mulipass: multipass.md
+  - Mulipass: multipass.md
 
 # Extra settings
 markdown_extensions:
