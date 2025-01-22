@@ -5,9 +5,10 @@ services:
     ports:
       - 8080:80
     networks: 
-      - mkdocs-network
+      - mkdocs_network
     volumes: 
       - ./site:/usr/share/nginx/html
+
 networks: 
   mydocs_network:
     driver: bridge
