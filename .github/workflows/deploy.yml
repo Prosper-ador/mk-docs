@@ -1,4 +1,4 @@
-#Prosper-ador
+name: mine1
 on:
   push:
     branches:
@@ -26,6 +26,6 @@ jobs:
          with:
            context: .
            push: true
-           tag: | 
-             ghcr.io/${{ vars.repository }}:latest
-             ghcr.io/${{ vars.repository }}:${{ github.run_number }}
+           tags: | 
+             ghcr.io/${{ vars.REPO1 }}:latest
+             ghcr.io/${{ vars.REPO1 }}:${{ github.run_number }}
